@@ -6,7 +6,7 @@ async function fetchProduct() {
 }
 
 fetchProduct();
-
+//Introdução a definição da tipagem por interfaces
 interface API{
   nome: string;
   preco: number;
