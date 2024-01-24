@@ -11,5 +11,13 @@ document.querySelector('img'); //HTMLImageElement
 const video = document.querySelector('#videoprincial'); //Ao passar um id ele identifica como um Element. Mas não sabe assegurar qual classe que é
 //video?.volume;-> Retorna um erro
 if(video instanceof HTMLVideoElement){
-  video?.volume;
+  video.volume;
 }
+
+const links = document.querySelectorAll(".link"); //NodeList
+links.forEach((link)=>{
+  if(link instanceof HTMLAnchorElement){
+    console.log(link.href)
+  }
+})
+const arrayLinks = Array.from(links)
